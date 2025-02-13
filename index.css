@@ -310,6 +310,11 @@ body {
         justify-content: flex-start;
     }
 
+    .menuButton {
+        width: 7vh;
+        height: 7vh;
+    }
+
     .blurb {
         text-align: center;
         max-width: 60vw;
@@ -419,7 +424,7 @@ body {
 
 }
 
-@keyframes scrollin {
+@keyframes scrolling {
     0% {
         transform: translateX(0);
     }

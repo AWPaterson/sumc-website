@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="faq.css">
+<link rel="stylesheet" href="trips.css">
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="res/favico/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="res/favico/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="res/favico/apple-touch-icon-72x72.png" />
@@ -57,67 +57,31 @@
     <div class="mainContainer">
         <img id="leftContourContent1" class="contour" src="res/contour1.png">
         <img id="rightContourContent1" class="contour" src="res/contour2.png">
-        <h2 id="title">FAQs</h2>
-        <p id="acro"><em>frequently asked questions</em></p>
+        <h2 id="title">Trips</h2>
+        <p id="acro"><em>Here you can find all of our official trips of the year, as well as dates and information about
+                each one. Before buying a ticket, remember to attend the mandatory zoom call for each trip for key
+                information!</em></p>
         <div id="content-1">
             <div id="col1">
-                <h3 class="question">How do I join?</h3>
-                <p class="answer">Sign up for a sports union membership, after you’ve done this you can pay the £16
-                    yearly
-                    fee to join the mountaineering club – <a
-                        href="https://www.strathunion.com/sports-union/membership/#Membership">https://www.strathunion.com/sports-union/membership/#Membership</a>
-                </p>
-
-                <h3 class="question">How do I find out about upcoming events?</h3>
-                <p class="answer">Best way to stay up to date with the clubs activities is to follow us on <a
-                        href="https://www.instagram.com/sumcstrathclyde/">instagram</a>, and join the <a
-                        href="https://discord.gg/8a2V45FV8N">discord</a> or <a
-                        href="https://www.facebook.com/groups/359746799574348">facebook group</a>.
-                </p>
-
-                <h3 class="question">I’m coming on a weekend trip, what do I need to know?</h3>
-                <p class="answer">Before every trip we have a zoom meeting, which if you are signed up you should have
-                    either already attended or be planning to! If you missed it or want a reminder you can find
-                    information
-                    on our weekend trip info page or contact the Turtle via facebook with any questions.
-                </p>
-
-                <h3 class="question">I am only here for a term, can I still join?</h3>
-                <p class="answer">Yes! You can buy a membership for a specified term the same way you buy a membership
-                    for
-                    the full year.
-                </p>
+                <img class="mapMarker" id="torridonMapMarker" src="res/map-marker.svg" onclick="toggleTrip('torridon')">
+                <img class="mapMarker" id="glencoeMapMarker" src="res/map-marker.svg" onclick="toggleTrip('glencoe')">
+                <img class="mapMarker" id="kincraigMapMarker" src="res/map-marker.svg" onclick="toggleTrip('kincraig')">
+                <img class="mapMarker" id="braemarMapMarker" src="res/map-marker.svg" onclick="toggleTrip('braemar')">
+                <img class="mapMarker" id="nevisMapMarker" src="res/map-marker.svg" onclick="toggleTrip('nevis')">
+                <img class="mapMarker" id="cobblerMapMarker" src="res/map-marker.svg" onclick="toggleTrip('cobbler')">
+                <img class="mapMarker" id="bennybegMapMarker" src="res/map-marker.svg" onclick="toggleTrip('bennybeg')">
             </div>
             <div id="col2">
-                <h3 class="question">Do I need a sports union membership?</h3>
-                <p class="answer">Yes, you can get this at <a
-                        href="https://www.strathunion.com/sports-union/membership/#Membership">https://www.strathunion.com/sports-union/membership/#Membership</a>
-                </p>
-
-                <h3 class="question">I have zero experience, can I still join?</h3>
-                <p class="answer">Yes! There are a range of members in our club at every level and if you ask nicely,
-                    you
-                    might score a cool opportunity to tag along with a more experienced member on an expedition and
-                    learn
-                    some skills. But hey, they’re not obligated to do it, so just be chill about it! There are also
-                    oppourtunies to learn if you get a spot on one of the subsided courses on first aid, climbing,
-                    navigation or winter skills.
-                </p>
-
-                <h3 class="question">Do I need to have/buy a ton of expensive gear to join?</h3>
-                <p class="answer">No! For our weekly climbing meets you can rent the shoes/harnesses you need from the
-                    climbing center and for our trips you can find the gear you need (mostly just the basics) on our kit
-                    list page.
-                </p>
-
-                <h3 class="question">How do I find out about upcoming events?</h3>
-                <p class="answer">Yes! Contact any of our committee or the SUMC Turtle via the <a
-                        href="https://www.facebook.com/groups/359746799574348">facebook group</a> and page
-                </p>
+                <h2 id="tripTitle">Click on the map to find out more!</h3>
+                    <p id="tripDates"></p>
+                    <p id="tripInfo">
+                    </p>
+                    <div id="tripImg" style="display: none;">
+                        <img id="tripImage" class ="mySlides" style="display: none;">
+                      </div>
+                      
             </div>
         </div>
-        <p id="statement">If your question isnt answered here, feel free to contact our committee on the club's official
-            social media pages!</p>
         <div id="socials">
             <h2 class="blurb">
                 Interested? <br><br>
@@ -134,6 +98,7 @@
         </div>
         <img src="res/favico/favicon-32x32.png" id="miniLogo" alt="Logo"
             style="filter: invert(1); padding-bottom: 3vw;">
+    </div>
     </div>
 </body>
 
