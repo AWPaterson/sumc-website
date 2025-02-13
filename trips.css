@@ -61,7 +61,7 @@ body {
     width: 20vw;
     min-width: min(300px, 50vw);
     background: white;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("res/boxContour.jpg");
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("res/boxContour.JPG");
     background-size: cover;
     background-position: 50% 50%;
     padding: 15vh 0 0 3vh;
@@ -190,7 +190,7 @@ body {
 #col1 {
     position: relative;
     /* Ensure #col1 is positioned relatively */
-    background-image: url("res/mapofscotland.jpg");
+    background-image: url("res/mapofscotland.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,7 +211,7 @@ body {
     width: 48vw;
     height: 53vw;
     overflow: none;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(res/boxContour.jpg);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(res/boxContour.JPG);
     background-size: cover;
     border-radius: 10px;
     border-color: black;
